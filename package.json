@@ -1,0 +1,30 @@
+{
+  "name": "world-trip",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "gen:theme-typings": "chakra-cli tokens src/styles/theme.ts",
+    "postinstall": "npm run gen:theme-typings"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.9",
+    "@chakra-ui/react": "^1.5.0",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^4",
+    "next": "10.1.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.32.8",
+    "swiper": "^6.5.6"
+  },
+  "devDependencies": {
+    "@chakra-ui/cli": "^1.3.0",
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "typescript": "^4.2.4"
+  }
+}
